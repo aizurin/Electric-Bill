@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.Electric" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">#1976D2</item> <!-- Blue 700 -->
+        <item name="colorPrimaryDark">#0D47A1</item> <!-- Blue 900 -->
+        <item name="colorAccent">#6200EE</item> <!-- Purple 500 -->
+        <item name="android:statusBarColor">#0D47A1</item> <!-- Darker shade for the status bar -->
+    </style>
+</resources>

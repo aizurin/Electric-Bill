@@ -1,0 +1,118 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E3F2FD">
+
+    <!-- Input Section -->
+    <LinearLayout
+        android:id="@+id/inputSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity Bill Estimator"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputKWh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:hint="Enter electricity usage (kWh)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:hint="Enter rebate percentage (0-5%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calculate"
+                android:backgroundTint="#1976D2"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:backgroundTint="#1976D2"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Result Section -->
+    <LinearLayout
+        android:id="@+id/resultSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<TextView
+            android:id="@+id/tvCharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charges:"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            android:padding="8dp" /> -->
+
+        <TextView
+            android:id="@+id/tvTotalCharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Charges: RM 0.00"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvFinalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Cost After Rebate: RM 0.00"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="#1976D2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
